@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AdiHaus';
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body {
+    background-color: white;
+    display: flex;
+    background-image: url('../images/projects/coming-soon/img/bg-overlay.png')
+}
+
+
+#logo {
+    display: block;
+    margin: auto;
+    background-color: white;
+    padding: 18px;
+}
+
+#athlete-mobile {
+    background-color: green;
+    background-image: url('../images/projects/coming-soon/img/sneakers.png');
+    background-size: cover;
+    background-position: center;
+    height: 31.25vh;
+    background-repeat: no-repeat;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.all-content-container {
+    font-family: 'AdiHaus';
+}
+
+.all-text-container {
+    text-align: center;
+    padding: 0px 20px;
+    margin: 10px;
+}
+
+#red {
+    color: #2F80ED;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#bold {
+    color: #423A3A;
+
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#text {
+    color: #333333;
+    margin: 20px 0px 40px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;    
+    margin-top: 30px;
+    height: 48px;
+    border: #333333;
+}
+
+#go {
+    background-color: #423A3A;
+    color: white;
+    width: 64px;
+    font-weight: bold;
+}
+
+#email {
+    width: 50%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+body {
+    background: url('../images/projects/coming-soon/img/bg-overlay.png'), url('../images/projects/coming-soon/img/background.png') ;
+    background-size: cover;
+}
+
+    .all-container {
+        width: 55%;
+    }
+    .all-text-container {
+        text-align: left;
+
+    }
+    #athlete-mobile {
+        display: none;
+    }
+    #logo {
+        display: block;
+        margin: 30px 30px 100px;
+        background-color: white;
+        padding: 18px;
+        padding-top: 30px;
+    }
+    .desktop-image {
+        display: block;
+        width: 45%;
+        background-image: url('../images/projects/coming-soon/img/sneakers.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    #red {
+        font-size: 64px;
+        letter-spacing: 5px;
+    }
+    
+    #bold {
+        font-size: 64px;
+        line-height: 80px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    #text {
+        color: #333333;
+        margin: 20px 0px 40px;
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+}

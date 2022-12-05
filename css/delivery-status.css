@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+
+/* Typical start to stylesheet
+    Erases default CSS on elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url('../images/projects/delivery-status/img/ZigZag.png');
+    background-color: #46A67E;
+    background-size: cover;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #2F463D;
+}
+
+.all-content-container {
+    margin-top: 200px;
+}
+
+
+.text-container p {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+    padding-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+    padding-top: 47px;
+}
+
+.text-container {
+    text-align: center;
+    line-height: 27px;
+    margin: 25px;
+}
+
+.mobile-panel {
+    background-color: white;
+    width: 327px;
+    height: 567px;
+    margin: 71px auto;
+    min-width: 300px;
+    box-shadow: 0px 40px 40px -20px #3C7B61;
+    border-radius: 5px;
+    position: relative;
+}
+
+.menu-container {
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #F0FFF5;
+    width: 87%;
+    border-radius: 5px;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto 15px;
+    flex-basis: 45%;
+}
+
+.item-name {
+    font-weight: 800;
+    color: #2F463D;
+}
+
+.price {
+    font-weight: 500;
+    color: #7A8F85;
+}
+
+.change {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #467A66;
+    flex-basis: 30%;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.focus, .grey {
+    background-color: #46A67E;
+    color: white;
+    padding: 15px ;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+    width: 86%;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18.3px;
+}
+
+.dots {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 6%;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: #E0E0E0;
+    border-radius: 100%;
+}
+
+.dot.green {
+    background-color: #67BD99;
+}
+
+#mobile-x-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.desktop-panel {
+    display: none;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .mobile-panel {
+        display: none; 
+    }
+
+    .desktop-panel {
+        display: revert;
+        background-color: white;
+        margin: 71px 0;
+        min-width: 400px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .all-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active {
+        width: 450px;
+        height: 690px;
+        box-shadow: 0px 40px 40px -20px #3C7B61;
+        z-index: 9;
+    }
+
+    .in-active {
+        width: 400px;
+        height: 650px;
+        z-index: 1;
+    }
+
+    body {
+        background-image: url('../images/projects/delivery-status/img/BigZigZag.png');
+        background-color: #46A67E;
+        background-size: cover;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-top: 20px; 
+    }
+
+    .grey {
+        background: #BDBDBD;
+        box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
+    }
+
+    .dot {
+        width: 9px;
+        height: 9px;
+        background-color: #E0E0E0;
+        border-radius: 100%;
+    }
+
+    .menu-container {
+        font-family: 'Montserrat';
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+        background-color: #F0FFF5;
+        width: 87%;
+        border-radius: 15px;
+    }
+    
+    .menu {
+        font-size: 16px;
+    }
+        
+    .change {
+        font-size: 14px;
+        line-height: 30px;
+        flex-basis: 30%;
+        padding-left: 15px;
+    }
+
+    #x-button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: #E9F2EC;
+        padding: 8px;
+        border-radius: 100%;
+    }
+
+    /* .cta {
+        margin-top: 0px;
+    } */
+
+}
