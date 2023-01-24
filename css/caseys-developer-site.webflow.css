@@ -7049,6 +7049,9 @@ figcaption {
 .display-5.mg-bottom-0.no-logo {
   padding-bottom: 85px;
 }
+.display-5.mg-bottom-0.no-logo-two-lines {
+  padding-bottom: 36px;
+}
 
 .blog-post-link-wrapper {
   -webkit-transition-property: -webkit-transform;
