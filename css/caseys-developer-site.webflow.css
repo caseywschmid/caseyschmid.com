@@ -4513,7 +4513,11 @@ figcaption {
 
 .btn-secondary.white:hover {
   border-color: #fff;
-  background-color: #fport {
+  background-color: #fff;
+  color: #1b1f24;
+}
+
+.badge-primary {
   display: inline-block;
   padding: 18px 28px;
   border-radius: 10px;
@@ -7379,6 +7383,24 @@ figcaption {
 
   .style---logo-sidebar {
     max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .style---heading {
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+
+  .style---content-wrapper {
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+
+  .checkout-col-right {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
   }
 }
 
