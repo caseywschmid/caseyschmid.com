@@ -4513,11 +4513,7 @@ figcaption {
 
 .btn-secondary.white:hover {
   border-color: #fff;
-  background-color: #fff;
-  color: #1b1f24;
-}
-
-.badge-primary {
+  background-color: #fport {
   display: inline-block;
   padding: 18px 28px;
   border-radius: 10px;
@@ -7021,7 +7017,7 @@ figcaption {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto ;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
